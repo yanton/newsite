@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>远程教育平台</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if it IE 9]-->
+	<script type="text/javascript" src="js/html5.js"></script>
+	<!--[endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- logo和搜索栏 -->
+					<div class="brand">
+						<a href="index.html"><img src="img/logo.png" alt="曼诺林"></a>
+						<div class="title hidden-xs">远程教辅平台</div>
+						<form class="navbar-form hidden-xs" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="搜索课程、视频、资料" x-webkit-speech lang="zh-CN">
+							</div><button type="submit" class="btn btn-default btn-search">搜索</button>
+						</form>
+						<div class="admin">
+							<div class="name"><a href="###">CaptainJack</a></div>
+							<div class="manage"><a href="###">注销</a></div>
+						</div>
+					</div><!-- /.brand -->
+				</div><!-- /.container -->
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="header">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">课程中心</a></li>
+								<li><a href="#">个人中心</a></li>
+								<li><a href="#">实时课堂</a></li>
+								<li><a href="#">扩展阅读</a></li>
+							</ul>
+							<form class="navbar-form header-search" role="search" style="display:none;">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="搜索课程、视频、资料" x-webkit-speech lang="zh-CN">
+								</div><button type="submit" class="btn btn-default btn-search">搜索</button>
+							</form>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container ./header -->
+				</div><!-- /.header -->
+			</nav>
+		</header>
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/carousel02.png" alt="测试第一张">
+					<div class="carousel-caption">
+						测试第一张
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/carousel01.png" alt="测试第二张">
+					<div class="carousel-caption">
+						测试第二张
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/carousel03.png" alt="测试第三张">
+					<div class="carousel-caption">
+						测试第三张
+					</div>
+				</div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		<div class="container">
+			<div class="col-md-2 col-xs-4 sidebar">
+				<div class="nav navbar">
+					<ul><hr/>
+						<li class="active"><a href="">全部课程918</a></li><hr/>
+						<li><a href="">全部课程918</a></li><hr/>
+						<li><a href="">全部课程918</a></li><hr/>
+						<li><a href="">全部课程918</a></li><hr/>
+					</ul>
+				</div>
+				<div class="filter-title"><span class="filter">课程筛选</span></div>
+				<div class="incoming">
+					<span class="filter">按来源</span>
+					<div class="classify-content">
+						<span>全部</span>
+						<span>TED</span>
+						<span>BBC</span>
+						<span>可汗学院国际名校公开课</span>
+						<span>中国大学视频公开课</span>
+						<span>国立台湾大学公开课</span>
+					</div>
+					<hr/>
+				</div>
+				<div class="classify">
+					<span class="filter">按类型</span>
+					<div class="classify-content">
+						<span class="active">全部</span>
+						<span>化学</span>
+						<span>哲学</span>
+						<span>心理</span>
+						<span>艺术</span>
+						<span>赏课</span>
+						<span>历史</span>
+						<span>生物</span>
+						<span>文学</span>
+						<span>物理</span>
+						<span>伦理</span>
+						<span>环境</span>
+						<span>数学</span>
+						<span>社会</span>
+						<span>管理</span>
+						<span>法律</span>
+						<span>经济</span>
+						<span>演讲</span>
+						<span>医学</span>
+						<span>媒体</span>
+						<span>技能</span>
+						<span>其它</span>
+						<span>计算机</span>
+						<span>地球科学</span>
+					</div>
+					<hr/>
+				</div>
+				<div class="school">
+					<span class="filter">按学校</span>
+					<div class="classify-content">
+						<span>全部</span>
+						<span>加州大学伯克利分校</span>
+						<span>牛津大学</span>
+						<span>普林斯顿大学</span>
+						<span>剑桥大学</span>
+						<span>斯坦福大学</span>
+						<span>哈佛大学</span>
+						<span>麻省理工学院</span>
+						<span>耶鲁大学</span>
+						<span>宾夕法尼亚大学</span>
+						<span>复旦大学</span>
+						<span>清华大学</span>
+						<span>北京大学</span>
+						<span>南开大学</span>
+						<span>电子科技大学</span>
+						<span>北京联合大学</span>
+						<span>巴黎高等商学院</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-10 col-xs-8 search-content">
+				<div class="search-title">
+					<h2>该类详细课</h2>
+					<span>用时1秒  本类课程共计123</span>
+				</div>
+				<div class="resault">
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic1.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">华南理工大学公开课：建筑美学</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">华南理工大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+
+					<!-- 下面是第一部分的复制 -->
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic2.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">湖北工业大学：明式家具赏析</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">湖北工业大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic3.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">湖北工业大学：明式家具赏析</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">湖北工业大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic4.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">湖北工业大学：明式家具赏析</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">湖北工业大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic5.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">湖北工业大学：明式家具赏析</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">湖北工业大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic6.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">湖北工业大学：明式家具赏析</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">湖北工业大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic2.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">湖北工业大学：明式家具赏析</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">湖北工业大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic3.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">湖北工业大学：明式家具赏析</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">湖北工业大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic4.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">湖北工业大学：明式家具赏析</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">湖北工业大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic5.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">湖北工业大学：明式家具赏析</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">湖北工业大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+					<div class="one-part search-part">
+						<div class="pic">
+							<img src="img/search-pic6.png" alt="">
+							<div class="dask">
+								<a href="###">
+									<div class="play">独家</div>
+									<span class="ico-play"></span>
+								</a>
+							</div>
+						</div>
+						<div class="text-content">
+							<table>
+								<th colspan="4"><a href="###">湖北工业大学：明式家具赏析</a></th>
+									<tr>
+										<td class="td35">学校：<a href="###">湖北工业大学</a></td>
+										<td class="td25">讲师：<a href="###">唐晓祥</a></td>
+										<td class="td25"> </td>
+										<td class="favor td15"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></td>
+									</tr>
+									<tr>
+										<td class="td35">集数：<a href="###">5</a></td>
+										<td class="td25">类型：<a href="###">艺术</a></td>
+										<td class="td25"> </td>
+										<td class="td15">&nbsp;￥&nbsp;&nbsp;4.50</td>
+									</tr>
+									<tr>
+										<td colspan="4" style="font-size:12px;">本课程五讲内容为：1、建筑美学导论；2、客家建筑审美的基本维度；3、中国园林建筑美学；4、西方园林美学概述；5、岭南建筑的文化地域性格。建筑是人为且为人的人居环境，烙印了人类的创造智慧、文化记忆和情</td>
+									</tr>
+							</table>
+						</div>
+					</div><!-- /.one-part.search-part -->
+					<hr style="boerder:0;border-top:1px solid #dbdbdb;margin:14px 0 24px;">
+
+
+
+
+
+				</div> <!-- /.resault -->
+				<ul class="paging">
+				  <li><a href="###">&lt;</a></li>
+				  <li class="active"><a href="#">1</a></li>
+				  <li><a href="###">2</a></li>
+				  <li><a href="###">3</a></li>
+				  <li><a href="###">4</a></li>
+				  <li><a href="###">5</a></li>
+				  <li class="etc"><span>...</span></li>
+				  <li><a href="###">15</a></li>
+				  <li><a href="###">&gt;</a></li>
+				</ul>
+			</div> <!-- .col-md-10.search-content -->
+
+
+		</div><!-- /.container -->
+		<div class="footerpush"></div>
+	</div>
+	<div style="display:none;" class="back-to" id="toolBackTop">
+		<a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top">返回顶部</a>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="content">&copy;Copyright&nbsp;&nbsp;北京市曼诺林数字科技有限公司</div>
+		</div>
+	</footer>
+	<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="js/stickUp.js"></script>
+	<script type="text/javascript">
+              //initiating jQuery
+              jQuery(function($) {
+              	$(document).ready( function() {
+                  //为 '.navbar-wrapper' class 启用stickUp插件
+                  	$('.header').stickUp({
+                  		parts: {
+	                  		0:'id1',
+	                  		1:'id2',
+	                  		2: 'id3',
+	                  		3: 'id4',
+	                  	},
+                  		itemClass: 'divitem',
+                  		itemHover: 'active'
+                 	});
+                 	marginTop:'50px';
+
+                 	 //返回顶部和menue搜索栏的显示
+                 	var bt = $('#toolBackTop');
+		         	 /*var sw = $(document.body)[0].clientWidth;
+		          	var contentLength = $('.container')[0].clientWidth;*/
+		          	var hs = $('.header-search');
+		         	var header = $('.header');
+
+
+		         	var sw = $(document.body)[0].clientWidth;
+		          	var contentLength = $('.container')[0].clientWidth;
+		          	var limitsw = (sw - contentLength) / 2 - 90;
+
+		          	if (limitsw > 0){
+		          		limitsw = parseInt(limitsw);
+		          		bt.css("right",limitsw);
+		          	}else{
+		          		bt.css("right",20)
+		          	}
+
+		         	$(window).resize(function(){
+			          	var sw = $(document.body)[0].clientWidth;
+			          	var contentLength = $('.container')[0].clientWidth;
+			          	var limitsw = (sw - contentLength) / 2 - 90;
+
+			          	if (limitsw > 0){
+			          		limitsw = parseInt(limitsw);
+			          		bt.css("right",limitsw);
+			          	}else{
+			          		bt.css("right",20)
+			          	}
+		          	});
+
+		          /*var limitsw = (sw - contentLength) / 2 - 90;
+		          if (limitsw > 0){
+	                limitsw = parseInt(limitsw);
+	                bt.css("right",limitsw);
+		          }
+		          */
+		          	$(window).scroll(function() {
+		          		var st = $(window).scrollTop();
+			          	if(st > 200){
+			          		bt.show();
+			          		hs.show();
+			          		header.css("box-shadow","0 1px 15px rgba(153,153,153,0.50)");
+			          	}else{
+			          		bt.hide();
+			          		hs.hide();
+			          		header.css("box-shadow","none");
+			          	}
+		        	});
+		          	$(".pic").hover(
+		          		function () {
+		          			$(this).find(".dask").fadeToggle(0);
+		          		},
+		          		function () {
+		          			$(this).find(".dask").fadeToggle(0);
+		          	});
+
+		          	$(".favor").click(
+		          		function(){
+		          			//可以在这里处理点击事件和数据
+		          			$(this).toggleClass("selected");
+		          			if($(this).attr('class').indexOf('selected') >= 0){
+		          				$(this).find('span').html('&nbsp;&nbsp;取消');
+		          			}else{
+		          				$(this).find('span').html('&nbsp;&nbsp;收藏');
+		          			}
+		          		}
+		          	);
+
+
+		      });
+});
+</script>
+</body>
+</html>
