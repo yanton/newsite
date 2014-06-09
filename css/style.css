@@ -180,7 +180,11 @@ header nav ul li:hover {
 	z-index: 1024;
 	background-color: rgba(255, 255, 255, 0.90);
 }
-
+/* 固定head */
+.fixhead{
+	position: fixed;
+	top: 0;
+}
 /* 为header添加的搜索框 */
 .header-search{
 	float: right;
@@ -598,6 +602,78 @@ ul{
 	border-color: #fff;
 	background-color: #fff;
 }
-
-
-
+/* 学习页面，视频播放，评论列表等 */
+video{
+	display: block;
+	margin: 0 auto;
+}
+.video{
+	position: relative;
+	background-color: #111;
+}
+.video .container{
+	position: absolute;
+	left: 50%;
+	margin-left: -512px;
+}
+.vhead{
+	top: 16px;
+}
+.vcontrol{
+	bottom: 16px;
+}
+.video .container div{
+	float: left;
+}
+.vplay{
+	height: 26px;
+	width: 22px;
+	background: url(../img/play.png);
+}
+.video .progress-bar{
+	background-color: #195b34;
+}
+.play-now{
+	position: absolute;
+	left: 60%;
+	margin-left: -13px;
+	height: 26px;
+	width: 26px;
+	background: url(../img/play_now.png) no-repeat;
+}
+.video .progress{
+	height: 6px;
+	margin: 10px 0px;
+}
+.video .progress.pro-video{
+	width: 738px;
+}
+.video .progress.pro-vol{
+	width: 78px;
+	margin: 10px 14px 10px 4px;
+}
+.zoom{
+	float: none;
+	position: absolute;
+	right: 15px;
+	bottom: 0;
+	height: 26px;
+	width: 24px;
+	background: url(../img/zoom.png) no-repeat;
+}
+.zoom:hover,.vplay:hover{
+	cursor: pointer;
+}
+.timenow{
+	display: block;
+	font-size: 12px;
+	color: #aeaeae;
+	height: 26px;
+	line-height: 26px;
+}
+.volume{
+	margin-left: 6px;
+	height: 26px;
+	width: 18px;
+	background: url(../img/volume.png) no-repeat;
+}
