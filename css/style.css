@@ -606,15 +606,19 @@ ul{
 video{
 	display: block;
 	margin: 0 auto;
+	padding-top: 40px;
+	z-index: 99;
 }
 .video{
 	position: relative;
 	background-color: #111;
+	margin-bottom: 100px;
 }
 .video .container{
 	position: absolute;
 	left: 50%;
 	margin-left: -512px;
+
 }
 .vhead{
 	top: 16px;
@@ -624,6 +628,22 @@ video{
 }
 .video .container div{
 	float: left;
+}
+ul.breadnav{
+	float: left;
+	margin-bottom: 0;
+}
+.breadnav:before, .breadnav:after{
+	content: " ";
+}
+.breadnav li{
+	float: left;
+	padding: 0 2px;
+	color: #999;
+}
+.breadnav li a{
+	font-size: 13px;
+	color: #999;
 }
 .vplay{
 	height: 26px;

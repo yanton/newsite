@@ -572,26 +572,12 @@
 			<div class="content">&copy;Copyright&nbsp;&nbsp;北京市曼诺林数字科技有限公司</div>
 		</div>
 	</footer>
-	<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
-	<script src="js/stickUp.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 	<script type="text/javascript">
               //initiating jQuery
               jQuery(function($) {
               	$(document).ready( function() {
-                  //为 '.navbar-wrapper' class 启用stickUp插件
-                  	$('.header').stickUp({
-                  		parts: {
-	                  		0:'id1',
-	                  		1:'id2',
-	                  		2: 'id3',
-	                  		3: 'id4',
-	                  	},
-                  		itemClass: 'divitem',
-                  		itemHover: 'active'
-                 	});
-                 	marginTop:'50px';
-
                  	 //返回顶部和menue搜索栏的显示
                  	var bt = $('#toolBackTop');
 		         	 /*var sw = $(document.body)[0].clientWidth;
@@ -624,19 +610,16 @@
 			          	}
 		          	});
 
-		          /*var limitsw = (sw - contentLength) / 2 - 90;
-		          if (limitsw > 0){
-	                limitsw = parseInt(limitsw);
-	                bt.css("right",limitsw);
-		          }
-		          */
+
 		          	$(window).scroll(function() {
 		          		var st = $(window).scrollTop();
 			          	if(st > 200){
+			          		$('.header').addClass("fixhead");
 			          		bt.show();
 			          		hs.show();
 			          		header.css("box-shadow","0 1px 15px rgba(153,153,153,0.50)");
 			          	}else{
+			          		$('.header').removeClass("fixhead");
 			          		bt.hide();
 			          		hs.hide();
 			          		header.css("box-shadow","none");

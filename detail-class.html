@@ -63,13 +63,13 @@
 
 		<div class="video">
 			<div class="container vhead">
-				<ol class="breadcrumb">
-				  <li><a href="#">Home</a></li>
-				  <li><a href="#">Library</a></li>
-				  <li class="active">Data</li>
-				</ol>
+				<ul class="breadnav">
+				  <li><a href="#">国际名校公开课</a></li>
+				  <li>&gt;</li>
+				  <li><a href="#">学院公开课：建筑美学笔记</a></li>
+				</ul>
 			</div>
-			<video id="st-video" src=""></video>
+			<video id="st-video" src="../videodemo.mp4"></video>
 			<div class="container vcontrol">
 				<div class="vplay"></div>
 				<div style="position:relative;margin:0 15px;">
@@ -91,35 +91,12 @@
 				</div>
 				<div class="zoom"></div>
 			</div><!-- /.container.vcontrol -->
+		</div><!--  /.video -->
+		<div class="container">
+			<div class="row">
+				<div class="catage-title"><h2>课程介绍</h2></div>
+			</div>
 		</div>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>	<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>	<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
 		<div class="footerpush"></div>
 	</div>
 	<div style="display:none;" class="back-to" id="toolBackTop">
@@ -130,101 +107,135 @@
 			<div class="content">&copy;Copyright&nbsp;&nbsp;北京市曼诺林数字科技有限公司</div>
 		</div>
 	</footer>
-	<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 	<script type="text/javascript">
+	var scrollResult;
+
+      //initiating jQuery
+      jQuery(function($) {
+      	$(document).ready( function() {
+      		//打开网页，让学习视频展现，且铺满当前屏幕
+      		$('body,html').animate({scrollTop:134},600);
+      		var h=window.innerHeight
+      		|| document.documentElement.clientHeight
+      		|| document.body.clientHeight;
+      		var w=window.innerWidth
+      		||document.documentElement.clientWidth
+      		||document.body.clientWidth;
+      		$('.video').css({
+      			"width":w,
+      			"height":h-15,
+      		});
+      		$('video').css({
+      			"height": h-60
+      		});
+
+         //返回顶部和menue搜索栏的显示
+         var bt = $('#toolBackTop');
+	     	 var hs = $('.header-search');
+	     	 var header = $('.header');
 
 
-              //initiating jQuery
-              jQuery(function($) {
-              	$(document).ready( function() {
-              		//打开网页，让学习视频展现，且铺满当前屏幕
-              	$('body,html').animate({scrollTop:134},600);
-              	var h=window.innerHeight
-									|| document.documentElement.clientHeight
-									|| document.body.clientHeight;
-								var w=window.innerWidth
-									||document.documentElement.clientWidth
-									||document.body.clientWidth;
-            		$('.video').css({
-            			"width":w,
-            			"height":h-15,
-            		});
+	     	 var sw = $(document.body)[0].clientWidth;
+	     	 var contentLength = $('.container')[0].clientWidth;
+	     	 var limitsw = (sw - contentLength) / 2 - 90;
+
+	     	 if (limitsw > 0){
+	     	 	limitsw = parseInt(limitsw);
+	     	 	bt.css("right",limitsw);
+	     	 }else{
+	     	 	bt.css("right",20)
+	     	 }
+
+	     	 $(window).resize(function(){
+	     	 	var sw = $(document.body)[0].clientWidth;
+	     	 	var sh=window.innerHeight
+	     	 	|| document.documentElement.clientHeight
+	     	 	|| document.body.clientHeight;
+	     	 	var contentLength = $('.container')[0].clientWidth;
+	     	 	var limitsw = (sw - contentLength) / 2 - 90;
+	     	 	$('.video').css({
+	     	 		"width":sw,
+	     	 		"height":sh-15,
+	     	 	});
+	     	 	$('video').css({
+      			"height": sh-60
+      		});
+	     	 	if (limitsw > 0){
+	     	 		limitsw = parseInt(limitsw);
+	     	 		bt.css("right",limitsw);
+	     	 	}else{
+	     	 		bt.css("right",20)
+	     	 	}
+	     	 });
+
+	      $(window).scroll(function() {
+	      	var st = $(window).scrollTop();
+	      	//在头部鼠标向下滚动跳跃至视频播放
+	      	if(st<134){
+	      		if(scrollResult === "down"){
+
+	      			$('body,html').animate({scrollTop:134},0);
+	      		}
+	      	}
+	      	if(st > 300){
+	      		$('.header').addClass("fixhead");
+	      		bt.show();
+	      		hs.show();
+	      		header.css("box-shadow","0 1px 15px rgba(153,153,153,0.50)");
+	      	}else{
+	      		$('.header').removeClass("fixhead");
+	      		bt.hide();
+	      		hs.hide();
+	      		header.css("box-shadow","none");
+	      	}
+	      });
+	      $(".pic").hover(
+	      	function () {
+	      		$(this).find(".dask").fadeToggle(0);
+	      	},
+	      	function () {
+	      		$(this).find(".dask").fadeToggle(0);
+	      	});
+	      $('.vplay').click(function(){
+	      	var myVideo = $('#st-video')[0];
+	      	if(myVideo.paused){
+	      		myVideo.play();
+	      	}else{
+	      		myVideo.pause();
+	      	}
+	      });
 
 
 
-                  //为 '.header' class 启用stickUp插件
-
-
-                 	 //返回顶部和menue搜索栏的显示
-                 	var bt = $('#toolBackTop');
-		         	 /*var sw = $(document.body)[0].clientWidth;
-		          	var contentLength = $('.container')[0].clientWidth;*/
-		          	var hs = $('.header-search');
-		         	var header = $('.header');
-
-
-		         	var sw = $(document.body)[0].clientWidth;
-		          	var contentLength = $('.container')[0].clientWidth;
-		          	var limitsw = (sw - contentLength) / 2 - 90;
-
-		          	if (limitsw > 0){
-		          		limitsw = parseInt(limitsw);
-		          		bt.css("right",limitsw);
-		          	}else{
-		          		bt.css("right",20)
-		          	}
-
-		         	$(window).resize(function(){
-			          	var sw = $(document.body)[0].clientWidth;
-			          	var sh=window.innerHeight
-										|| document.documentElement.clientHeight
-										|| document.body.clientHeight;
-			          	var contentLength = $('.container')[0].clientWidth;
-			          	var limitsw = (sw - contentLength) / 2 - 90;
-			          	$('.video').css({
-            			"width":sw,
-            			"height":sh-15,
-            		});
-			          	if (limitsw > 0){
-			          		limitsw = parseInt(limitsw);
-			          		bt.css("right",limitsw);
-			          	}else{
-			          		bt.css("right",20)
-			          	}
-		          	});
-
-		          /*var limitsw = (sw - contentLength) / 2 - 90;
-		          if (limitsw > 0){
-	                limitsw = parseInt(limitsw);
-	                bt.css("right",limitsw);
-		          }
-		          */
-		          	$(window).scroll(function() {
-		          		var st = $(window).scrollTop();
-			          	if(st > 200){
-			          		$('.header').addClass("fixhead");
-			          		bt.show();
-			          		hs.show();
-			          		header.css("box-shadow","0 1px 15px rgba(153,153,153,0.50)");
-			          	}else{
-			          		$('.header').removeClass("fixhead");
-			          		bt.hide();
-			          		hs.hide();
-			          		header.css("box-shadow","none");
-			          	}
-		        	});
-		          	$(".pic").hover(
-		          		function () {
-		          			$(this).find(".dask").fadeToggle(0);
-		          		},
-		          		function () {
-		          			$(this).find(".dask").fadeToggle(0);
-		          	});
-
-
-		      });
+    });
 });
+
+
+
+
+var scrollFunc=function(e){ 
+    e=e || window.event; 
+    if(e.wheelDelta){//IE/Opera/Chrome 
+        if(e.wheelDelta < 0){
+        	scrollResult = "down";
+        }else{
+        	scrollResult = "up";
+        }
+    }else if(e.detail){//Firefox 
+        if(e.detail > 0){
+        	scrollResult = "down";
+        }else{
+        	scrollResult = "up";
+        }
+    } 
+} 
+/*注册事件*/ 
+if(document.addEventListener){ 
+    document.addEventListener('DOMMouseScroll',scrollFunc,false); 
+}//W3C 
+window.onmousewheel=document.onmousewheel=scrollFunc;//IE/Opera/Chrome 
 </script>
 </body>
 </html>
