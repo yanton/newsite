@@ -305,6 +305,11 @@ h1,h2,h3,h4,h5{
 	margin-top: 25px;
 	padding: 0 15px;
 }
+.second-line:before,.second-line:after{
+	display: table;
+	content: " ";
+	clear: both;
+}
 .img-line{
 	position: relative;
 	padding-left: 0;
