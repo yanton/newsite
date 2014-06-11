@@ -697,3 +697,101 @@ ul.breadnav{
 	width: 18px;
 	background: url(../img/volume.png) no-repeat;
 }
+/* 课程介绍 */
+.intro-class{
+	margin: 0 15px;
+}
+.intro-class:before,.intro-class:after{
+	display: table;
+	content: " ";
+	clear: both;
+}
+.show-pic{
+	float: left;
+	width: 190px;
+}
+.show-detail{
+	float: right;
+	width: 804px;
+	overflow: hidden;
+}
+.showdl, .showdr{
+	padding: 0 0 10px;
+}
+.showdl{
+	width: 320px;
+}
+.namekeys{
+	color: #737373;
+}
+.namevals,.namevals a{
+	color: #2a2a2a;
+}
+.sd-content{
+	color: #555;
+}
+
+
+/* 网友评论 */
+.comment{
+	position: relative;
+	background-color: #f3f3f3;
+	margin: 0 15px;
+}
+.comment:before,.comment:after{
+	display: table;
+	content: " ";
+	clear: both;
+}
+.cm-avatar,.cm-detail{
+	float: left;
+	padding-top: 14px;
+}
+.cm-avatar{
+	width: 116px;
+}
+.cm-detail{
+	width: 878px;
+}
+.cm-name,.cm-content,.cm-opra{
+	position: relative;
+}
+.comment span{
+	display: inline-block;
+	zoom: 1;
+}
+.cm-name,.cm-name a{
+	color: #008643;
+	font-size: 12px;
+}
+.place{
+	color: #3f3f3f;
+}
+.date{
+	color: #3f3f3f;
+	font-size: 12px;
+	position: absolute;
+	left: 400px;
+	top:16px;
+}
+.cm-content{
+	color: #0b0b0b;
+	margin: 10px 0;
+}
+.cm-opra{
+	padding: 4px 0;
+}
+.cm-school,.cm-school a,
+.cm-class,.cm-class a{
+	color: #808080;
+	font-size: 12px;
+}
+.cm-school{
+	border: 1px solid blue;
+}
+.cm-class{
+	border: 1px solid red;
+	width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
+}
