@@ -735,7 +735,9 @@ ul.breadnav{
 .sd-content{
 	color: #555;
 }
-
+.second-line.detail-class{
+	margin-bottom: 25px;
+}
 
 /* 网友评论 */
 .comment{
@@ -758,16 +760,25 @@ ul.breadnav{
 .cm-detail{
 	width: 878px;
 }
-.cm-name,.cm-content,.cm-opra{
+.cm-title,.cm-content,.cm-opra{
 	position: relative;
+	zoom: 1;
+}
+.cm-title:after, .cm-opra:after{
+	display: block;
+	content: "";
+	clear: both;
 }
 .comment span{
-	display: inline-block;
-	zoom: 1;
+	display: block;
+	float: left;
 }
 .cm-name,.cm-name a{
 	color: #008643;
 	font-size: 12px;
+}
+.cm-name{
+	padding-top: 2px;
 }
 .place{
 	color: #3f3f3f;
@@ -777,7 +788,7 @@ ul.breadnav{
 	font-size: 12px;
 	position: absolute;
 	left: 400px;
-	top:16px;
+	top:2px;
 }
 .cm-content{
 	color: #0b0b0b;
@@ -791,12 +802,65 @@ ul.breadnav{
 	color: #808080;
 	font-size: 12px;
 }
-.cm-school{
-	border: 1px solid blue;
-}
 .cm-class{
-	border: 1px solid red;
-	width: 200px;
+	width: 220px;
 	overflow: hidden;
 	white-space: nowrap;
+}
+.huifu,.fuzhi,.ding{
+	position: absolute;
+}
+.huifu,.fuzhi,.ding,
+.huifu a,.fuzhi a,.ding a{
+	color: #008643;
+	top: 0;
+}
+.huifu{
+	left: 256px;
+}
+.fuzhi{
+	left: 330px;
+}
+.ding{
+	left: 404px;
+}
+hr.cm-tophr{
+	border: none;
+	border-bottom: 1px solid #ececec;
+	margin: 0 15px 6px;
+}
+hr.cm-bottomhr{
+	border: none;
+	border-bottom: 1px solid #ececec;
+	margin: 6px 15px 20px;
+}
+.dosth{
+	position: relative;
+	margin: 0 auto;
+	zoom: 1;
+	width: 260px;
+}
+.dosth:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.domore,.docm{
+	float: left;
+
+}
+.domore{
+	margin-right: 8px;
+}
+.domore .btn{
+	color: #2b2b2b;
+	width: 126px;
+	height: 38px;
+	background-color: #ececec;
+}
+.docm .btn{
+	color: #fffdfd;
+	width: 126px;
+	height: 38px;
+	background-color: #21aa43;
 }
