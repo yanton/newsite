@@ -638,6 +638,23 @@ ul.breadnav{
 	float: left;
 	margin-bottom: 0;
 }
+ul.breadnav.caozuo{
+	float: right;
+}
+.breadnav.caozuo li{
+	padding: 0 15px;
+}
+.breadnav.caozuo li a{
+	text-decoration: none;
+}
+.caozuo .ico-favor,.caozuo .ico-nq{
+	margin-top: 2px;
+}
+.ico-nq{
+	background: url(../img/ico_nq0.png);
+	height: 18px;
+	width: 16px;
+}
 .breadnav:before, .breadnav:after{
 	content: " ";
 }
@@ -863,4 +880,21 @@ hr.cm-bottomhr{
 	width: 126px;
 	height: 38px;
 	background-color: #21aa43;
+}
+.cm-reply{
+	position: relative;
+	margin: 20px 15px;
+	height: 182px;
+}
+.cm-reply span{
+	position: absolute;
+	right: 10px;
+	bottom: 2px;
+	font-size: 12px;
+	color: #3f3f3f;
+}
+#dorpl{
+	height: 100%;
+	width: 100%;
+	padding: 10px 10px 18px;
 }
