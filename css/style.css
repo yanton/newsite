@@ -655,6 +655,33 @@ ul.breadnav.caozuo{
 	height: 18px;
 	width: 16px;
 }
+.qn-pop{
+	position: absolute;
+	background-color: white;
+	right: 15px;
+	top: 24px;
+	z-index: 9999;
+	border: 1px solid red;
+}
+.tab-content{
+	height: 400px;
+}
+.tab-pane{
+	padding: 0 20px;
+}
+.nav-tabs > li > a{
+	border: none;
+	margin-right: 0;
+	border-radius: 0;
+}
+.nav-tabs > li > a{
+	color: #cbcbcb;
+	background-color: #112e29;
+}
+.nav-tabs > li > a:hover{
+	color: #fff;
+	background-color: #112e29;
+}
 .breadnav:before, .breadnav:after{
 	content: " ";
 }
