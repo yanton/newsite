@@ -70,15 +70,28 @@
 				</ul>
 				<ul class="breadnav caozuo">
 					<li><a href="###"><div class="ico-favor"></div><span>&nbsp;&nbsp;收藏</span></a></li>
-					<li><a href="###"><div class="ico-nq"></div><span>&nbsp;&nbsp;笔记问答</span></a></li>
+					<li class="show-qn"><a href="javascript:void(0);"><div class="ico-nq"></div><span>&nbsp;&nbsp;笔记问答</span></a></li>
 					<li><a href="###"><span>更多</span></a></li>
 				</ul>
 				<div class="qn-pop">
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs">
-					  <li><a href="#home" data-toggle="tab">课程列表</a></li>
-					  <li><a href="#profile" data-toggle="tab">我的笔记</a></li>
-					  <li><a href="#messages" data-toggle="tab">我的问答</a></li>
+					  <li class="active">
+					  	<a href="#home" data-toggle="tab">课程列表</a>
+					  	<div class="arrow-up">
+					  		<span class="upinner">◆</span>
+					  	</div>
+					  </li>
+					  <li><a href="#profile" data-toggle="tab">我的笔记</a>
+							<div class="arrow-up">
+					  		<span class="upinner">◆</span>
+					  	</div>
+					  </li>
+					  <li><a href="#messages" data-toggle="tab">我的问答</a>
+							<div class="arrow-up">
+					  		<span class="upinner">◆</span>
+					  	</div>
+					  </li>
 					</ul>
 
 					<!-- Tab panes -->
@@ -99,15 +112,85 @@
 					  <div class="tab-pane" id="profile">
 					  	<div class="notepice">
 					  		<div class="nptop"><span>04:54</span></div>
-					  		<div class="npcontent"></div>
-					  		<div class="npbottem"></div>
+					  		<div class="npcontent">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现</div>
+					  		<div class="npbottem">
+					  			<div class="npbleft"><span>2014-3-2</span></div>
+					  			<div class="npbright">
+					  				<div class="modify">修改</div>
+					  				<div class="delete">删除</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="notepice">
+					  		<div class="nptop"><span>04:54</span></div>
+					  		<div class="npcontent">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现</div>
+					  		<div class="npbottem">
+					  			<div class="npbleft"><span>2014-3-2</span></div>
+					  			<div class="npbright">
+					  				<div class="modify">修改</div>
+					  				<div class="delete">删除</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="notepice">
+					  		<div class="nptop"><span>04:54</span></div>
+					  		<div class="npcontent">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现</div>
+					  		<div class="npbottem">
+					  			<div class="npbleft"><span>2014-3-2</span></div>
+					  			<div class="npbright">
+					  				<div class="modify">修改</div>
+					  				<div class="delete">删除</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="writenq">
+					  		<textarea name="" id="writepop"></textarea>
+					  		<button class="postnq">添加笔记</button>
 					  	</div>
 					  </div>
-					  <div class="tab-pane" id="messages">ccc</div>
+					  <div class="tab-pane" id="messages">
+					  	<div class="notepice">
+					  		<div class="nptop"><span>04:54</span></div>
+					  		<div class="npcontent">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现</div>
+					  		<div class="npbottem">
+					  			<div class="npbleft"><span>2014-3-2</span></div>
+					  			<div class="npbright">
+					  				<div class="modify">修改</div>
+					  				<div class="delete">删除</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="notepice">
+					  		<div class="nptop"><span>04:54</span></div>
+					  		<div class="npcontent">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现</div>
+					  		<div class="npbottem">
+					  			<div class="npbleft"><span>2014-3-2</span></div>
+					  			<div class="npbright">
+					  				<div class="modify">修改</div>
+					  				<div class="delete">删除</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="notepice">
+					  		<div class="nptop"><span>04:54</span></div>
+					  		<div class="npcontent">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现</div>
+					  		<div class="npbottem">
+					  			<div class="npbleft"><span>2014-3-2</span></div>
+					  			<div class="npbright">
+					  				<div class="modify">修改</div>
+					  				<div class="delete">删除</div>
+					  			</div>
+					  		</div>
+					  	</div>
+					  	<div class="writenq">
+					  		<textarea name="" id="writepop"></textarea>
+					  		<button class="postnq">添加问答</button>
+					  	</div>
+					  </div>
 					</div>
 				</div>
 			</div>
-			<video id="st-video" src="../videodemo.mp4"></video>
+			<div class="container vcontent"><video  id="st-video" src="../videodemo.mp4" style="width:100%;"></video></div>
 			<div class="container vcontrol">
 				<div class="vplay"></div>
 				<div style="position:relative;margin:0 15px;">
@@ -406,7 +489,7 @@
       			"height":h-15,
       		});
       		$('video').css({
-      			"height": h-60
+      			"height": h-90
       		});
 
          //返回顶部和menue搜索栏的显示
@@ -433,12 +516,12 @@
 	     	 	|| document.body.clientHeight;
 	     	 	var contentLength = $('.container')[0].clientWidth;
 	     	 	var limitsw = (sw - contentLength) / 2 - 90;
-	     	 	$('.video').css({
+	     	  $('.video').css({
 	     	 		"width":sw,
 	     	 		"height":sh,
 	     	 	});
 	     	 	$('video').css({
-      			"height": sh-60
+      			"height": sh-90
       		});
 	     	 	if (limitsw > 0){
 	     	 		limitsw = parseInt(limitsw);
@@ -447,8 +530,11 @@
 	     	 		bt.css("right",20)
 	     	 	}
 	     	 });
-
-	      $(window).scroll(function() {
+	     	 $(".show-qn").click(function(){
+	     	 		$(this).toggleClass("active");
+	      	 $(".qn-pop").toggle();
+	     	 });
+	      	$(window).scroll(function() {
 	      	var st = $(window).scrollTop();
 	      	//在头部鼠标向下滚动跳跃至视频播放
 	      	if(st<134){
@@ -489,6 +575,9 @@
 	      		myVideo.pause();
 	      	}
 	      });
+	      
+
+
 
 
 
