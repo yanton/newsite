@@ -77,6 +77,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "微软雅黑","Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
+textarea{
+	resize:none;
+}
 
 html,body {
   height: 100%;
@@ -331,10 +334,13 @@ h1,h2,h3,h4,h5{
 	background-color: rgba(0,0,0,0.6);
 	display: none;
 }
+.dask.active{
+	display: block;
+}
 .dask .play{
 	background-color: #05a756;
 	color: #fff;
-	font-size: 15px;
+	font-size: 14px;
 	text-align:center;
 	vertical-align: middle;
 	transform: rotate(-45deg);
@@ -542,7 +548,10 @@ ul{
 .favor:hover .ico-favor,.favor.selected .ico-favor{
 	background: url('../img/favor1.png') no-repeat;
 }
-.favor:hover,.favor.selected{
+.favor:hover,
+.favor:hover a,
+.favor.selected,
+.favor.selected a{
 	color: #21a557;
 	cursor: pointer;
 }
@@ -677,7 +686,7 @@ li.active .ico-nq{
 	background-color: white;
 	right: 15px;
 	top: 38px;
-	width: 260px;
+	width: 258px;
 	z-index: 9999;
 	display: none;
 }
@@ -691,7 +700,8 @@ li.active .ico-nq{
 	color: #cbcbcb;
 	background-color: #112e29;
 }
-.nav-tabs > li > a:hover{
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus{
 	color: #fff;
 	background-color: #112e29;
 }
@@ -730,6 +740,8 @@ li.active .arrow-up{
 .tab-pane{
 	height: 400px;
 	padding: 12px 20px;
+	border-left: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
 	overflow-y: scroll;
 }
 .tab-pane#home ul li a{
@@ -823,6 +835,37 @@ li.active .arrow-up{
 	background-color: #21aa43;
 	border: none;
 }
+
+.comentwrap{
+	padding: 10px 0;
+	width: 100%;
+	background-color: #fece7a;
+}
+.comentwrap .cm-reply{
+	margin: 10px 0 15px;
+}
+.morecmt .comment{
+	background-color: #fffee9;
+}
+.mcmtbread{
+	width: 100%;
+	height: 160px;
+	line-height: 160px;
+	background-color: #fece7a;
+}
+.mcmtbread .breadnav li,
+.mcmtbread .breadnav li a{
+	font-size: 26px;
+	color: #333;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -1075,4 +1118,106 @@ hr.cm-bottomhr{
 	height: 100%;
 	width: 100%;
 	padding: 10px 10px 18px;
+}
+
+
+
+
+/* 我的课程正在学习 */
+.sidebar.learning{
+	margin-top: 112px;
+}
+.learning li{
+	text-align: center;
+}
+.tabs{
+	width: 100%;
+	zoom: 1;
+	margin: 18px 0;
+}
+.tabs:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.tabs div{
+	float: left;
+	margin-right: 58px;
+	color: #666;
+	border-bottom: 3px solid #858585;
+}
+.tabs div a{
+	color: #666;
+	text-decoration: none;
+}
+.tabs div:hover a,
+.tabs div.active a{
+	color: #2a2a2a;
+}
+.tabs div:hover,
+.tabs div.active{
+	color: #2a2a2a;
+	border-bottom: 3px solid #2a2a2a;
+}
+.row.f-in-o{
+	margin-left: -6px;
+	margin-right: -6px;
+}
+.row.f-in-o .col-md-3,
+.row.f-in-o .col-sm-4,
+.row.f-in-o .col-xs-6{
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.bookpic{
+	position: relative;
+	border: 1px solid #ececec;
+}
+.bookpic a img{
+	width: 100%;
+}
+.showinfo{
+	margin-top: 22px;
+	margin-bottom: 6px;
+	padding: 0 8px;
+}
+.infotop,.infoprog{
+	width: 100%;
+	zoom: 1;
+}
+.infotop:after,
+.infoprog:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.booktitle{
+	float: left;
+	max-width: 128px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.booktitle span{
+	color: #2b2b2b;
+}
+.placenow{
+	float: right;
+
+}
+.placenow,.placenow span,
+.infohis,.infohis span{
+	color: #666;
+}
+.infoprog{
+	margin: 8px 0;
+}
+.infoprog .progress{
+	margin: 0;
+	height: 8px;
+	border-radius: 0;
+	background-color: #ececec;
+}
+.infoprog .progress-bar{
+	height: 8px;
+	background-color: #a4a4a4;
 }

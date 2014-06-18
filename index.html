@@ -496,10 +496,10 @@
 		        	});
 		          	$(".img-line").hover(
 		          		function () {
-		          			$(this).find(".dask").fadeToggle(0);
-		          		},
-		          		function () {
-		          			$(this).find(".dask").fadeToggle(0);
+			      			$(this).find(".dask").addClass("active");
+			      		},
+			      		function () {
+			      			$(this).find(".dask").removeClass("active");
 		          	});
 		          	$('.back-top').click(function(){
 		          		$('html,body').animate({scrollTop:0},500);
