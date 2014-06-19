@@ -363,6 +363,14 @@ h1,h2,h3,h4,h5{
 	margin-left: -25px;
 	background: url('../img/ico-play.png') no-repeat;
 }
+.show-nq{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	color: #f1f1f1;
+	font-size: 16px;
+	text-align: center;
+}
 .show-title{
 	position: absolute;
 	color: #fff;
@@ -1185,7 +1193,8 @@ hr.cm-bottomhr{
 	padding-left: 6px;
 	padding-right: 6px;
 }
-#tab-learned, #tab-favor{
+#target-t-1, #target-t-2,#target-t-3,
+#target-t-ques{
 	display: none;
 }
 
@@ -1279,4 +1288,91 @@ hr.cm-bottomhr{
 .onebook{
 	margin: 4px 0;
 	padding: 4px 0;
+}
+/* 笔记问答my_class_nq */
+.nq-title{
+	width: 100%;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space: nowrap;
+	color: #2b2b2b;
+	text-align: center;
+	margin-bottom: 14px;
+}
+.nq-title a{
+	color: #2b2b2b;
+	text-decoration: none;
+}
+.nq-num{
+	width: 100%;
+	color: #666;
+	text-align: center;
+}
+.showinfo.active .nq-title a{
+	color: #666;
+}
+.note-intro,.one-note{
+	position: relative;
+	background-color: #f3f3f3;
+	width: 100%;
+	zoom: 1;
+	overflow: hidden;
+}
+#target-t-note{
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.note-intro:after,
+.one-note:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.note-intro img{
+	float: left;
+	width: 25%;
+}
+.nc-right{
+	float: left;
+	padding-left: 40px;
+	margin-top: 18px;
+	width: 75%;
+}
+.nc-title{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.nc-pre{
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 6px;
+}
+.note-num{
+	color: #303030;
+	margin-top: 38px;
+	margin-bottom: 34px;
+}
+.one-note{
+	height: 104px;
+	padding-right: 10px;
+}
+.lession{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -30px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	background-color: #21a557;
+}
+.note-right{
+	padding-left: 80px;
+}
+.nr-content{
+	margin-top: 22px;
+	color: #222;
 }
