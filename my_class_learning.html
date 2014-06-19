@@ -112,17 +112,19 @@
 				</div>
 			</div><!-- 左侧结束 -->
 			<!-- 右侧内容 -->
-			<div class="col-md-10 col-xs-8">
+			<div class="col-md-10 col-xs-8 mylearn">
 				<h2>我的课程</h2>
 				<!-- 顶部标签 -->
 				<div class="tabs">
-					<div class="active"><a href="javscript:void(0);">正在学习(6)</a></div>
-					<div><a href="javscript:void(0);">完成课程(6)</a></div>
-					<div><a href="javscript:void(0);">收藏课程(6)</a></div>
+					<div id="tabone" class="active" onclick="showTab(this);"><a href="javascript:void(0);">正在学习(10)</a></div>
+					<div id="tabtwo" onclick="showTab(this);"><a href="javascript:void(0);">完成课程(6)</a></div>
+					<div id="tabthree" onclick="showTab(this);"><a href="javascript:void(0);">收藏课程(6)</a></div>
 				</div>
 				<!-- 展示课程 -->
-				<div class="row f-in-o">
-					<div class="col-md-3 col-sm-4 col-xs-6">
+				<!-- tab1开始 -->
+				<div id="tab-learning" class="row f-in-o">
+				<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
 						<div class="bookpic">
 							<div class="onepic">
 								<a href="###"><img src="img/book01.png" alt=""></a>
@@ -131,6 +133,7 @@
 										<div class="play">播放</div>
 										<span class="ico-play"></span>
 									</a>
+									<div class="myclose" title="移除本课程"></div>
 								</div>
 							</div>
 							<div class="showinfo">
@@ -148,8 +151,600 @@
 								<div class="infohis"><span>观看到31分6秒</span></div>
 							</div>
 						</div>
-					</div>
-				</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book02.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book03.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book04.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book04.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book03.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book02.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book01.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book01.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book02.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+				</div><!-- tab1结束 -->
+				<!-- tab2开始 -->
+				<div id="tab-learned" class="row f-in-o">
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book04.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+									    <span class="sr-only">100% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>学习完成</span></div>
+								<div class="review">复习</div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook learned">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book03.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+									    <span class="sr-only">100% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>学习完成</span></div>
+								<div class="review">复习</div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook learned">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book02.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+									    <span class="sr-only">100% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>学习完成</span></div>
+								<div class="review">复习</div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook learned">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book01.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+									    <span class="sr-only">100% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>学习完成</span></div>
+								<div class="review">复习</div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook learned">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book01.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+									    <span class="sr-only">100% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>学习完成</span></div>
+								<div class="review">复习</div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook learned">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book02.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+									    <span class="sr-only">100% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>学习完成</span></div>
+								<div class="review">复习</div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+				</div><!-- tab2结束 -->
+				<!-- tab3开始 -->
+				<div id="tab-favor" class="row f-in-o">
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book02.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book03.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book04.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book04.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+					<!-- 单独一个课程展示 -->
+					<div class="col-md-3 col-sm-4 col-xs-6 onebook">
+						<div class="bookpic">
+							<div class="onepic">
+								<a href="###"><img src="img/book03.png" alt=""></a>
+								<div class="dask">
+									<a href="###">
+										<div class="play">播放</div>
+										<span class="ico-play"></span>
+									</a>
+									<div class="myclose" title="移除本课程"></div>
+								</div>
+							</div>
+							<div class="showinfo">
+								<div class="infotop">
+									<div class="booktitle"><span>剪纸的艺术</span></div>
+									<div class="placenow"><span>第一集</span></div>
+								</div>
+								<div class="infoprog">
+									<div class="progress">
+									  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									    <span class="sr-only">60% Complete</span>
+									  </div>
+									</div>
+								</div>
+								<div class="infohis"><span>观看到31分6秒</span></div>
+							</div>
+						</div>
+					</div><!-- 单独展示结束 -->
+				</div><!-- tab3结束 -->
 			</div><!-- 右侧结束 -->
 	    </div><!-- /.container-->
 		<div class="footerpush"></div>
@@ -217,13 +812,40 @@
       	$(".onepic").hover(
       		function () {
       			$(this).find(".dask").addClass("active");
+      			$(this).parent().find(".showinfo").addClass("active");
       		},
-      		function () {
+      		function() {
       			$(this).find(".dask").removeClass("active");
+      			$(this).parent().find(".showinfo").removeClass("active");
       	});
 
     });
 });
+
+ function showTab(obj){
+ 	var tab1 = document.getElementById("tabone");
+ 	var tab2 = document.getElementById("tabtwo");
+ 	var tab3 = document.getElementById("tabthree");
+ 	var tablearning = document.getElementById("tab-learning");
+ 	var tablearned = document.getElementById("tab-learned");
+ 	var tabfavor = document.getElementById("tab-favor");
+ 	tab1.className="";
+ 	tab2.className="";
+ 	tab3.className="";
+ 	obj.className="active";
+ 	var tabId = obj.id;
+ 	tablearning.style.display = "none";
+ 	tablearned.style.display = "none";
+ 	tabfavor.style.display = "none";
+ 	if(tabId==="tabone"){
+ 		tablearning.style.display = "block";
+ 	}else if(tabId==="tabtwo"){
+ 		tablearned.style.display = "block";
+ 	}else{
+ 		tabfavor.style.display = "block";
+ 	}
+ }
+
 
 </script>
 </body>

@@ -336,6 +336,7 @@ h1,h2,h3,h4,h5{
 }
 .dask.active{
 	display: block;
+	z-index: 1;
 }
 .dask .play{
 	background-color: #05a756;
@@ -370,6 +371,18 @@ h1,h2,h3,h4,h5{
 	width: 100%;
 	text-align: center;
 	padding: 0 10px;
+}
+.myclose{
+	position: absolute;
+	cursor: pointer;
+	top: 6px;
+	right: 6px;
+	height: 20px;
+	width: 20px;
+	background: url('../img/ico_close1.png') no-repeat;
+}
+.myclose:hover{
+	background: url('../img/ico_close2.png') no-repeat;
 }
 
 /* footer的样式 */
@@ -1130,6 +1143,9 @@ hr.cm-bottomhr{
 .learning li{
 	text-align: center;
 }
+.mylearn{
+	margin-bottom: 20px;
+}
 .tabs{
 	width: 100%;
 	zoom: 1;
@@ -1169,6 +1185,10 @@ hr.cm-bottomhr{
 	padding-left: 6px;
 	padding-right: 6px;
 }
+#tab-learned, #tab-favor{
+	display: none;
+}
+
 .bookpic{
 	position: relative;
 	border: 1px solid #ececec;
@@ -1177,16 +1197,21 @@ hr.cm-bottomhr{
 	width: 100%;
 }
 .showinfo{
-	margin-top: 22px;
-	margin-bottom: 6px;
-	padding: 0 8px;
+	padding: 22px 8px 6px;
+	background-color: #fff;
 }
-.infotop,.infoprog{
+.showinfo.active{
+	position: relative;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 9;
+}
+.infotop,.infoprog.infohis{
 	width: 100%;
 	zoom: 1;
 }
 .infotop:after,
-.infoprog:after{
+.infoprog:after
+.infohis:after{
 	display: table;
 	content: "";
 	clear: both;
@@ -1197,9 +1222,13 @@ hr.cm-bottomhr{
 	overflow: hidden;
 	white-space: nowrap;
 }
+.booktitle:hover{
+	cursor: pointer;
+}
 .booktitle span{
 	color: #2b2b2b;
 }
+
 .placenow{
 	float: right;
 
@@ -1207,6 +1236,11 @@ hr.cm-bottomhr{
 .placenow,.placenow span,
 .infohis,.infohis span{
 	color: #666;
+}
+.active .booktitle span,
+.active .placenow,.active .placenow span,
+.active .infohis,.active .infohis span{
+	color: #fff;
 }
 .infoprog{
 	margin: 8px 0;
@@ -1220,4 +1254,29 @@ hr.cm-bottomhr{
 .infoprog .progress-bar{
 	height: 8px;
 	background-color: #a4a4a4;
+}
+.active .infoprog .progress{
+	background-color: #ececec;
+}
+.active .infoprog .progress-bar{
+	background-color: #21a557;
+}
+.review{
+	position: absolute;
+	cursor: pointer;
+	right: 8px;
+	bottom: 6px;
+	float: right;
+	height: 16px;
+	line-height: 16px;
+	width: 46px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	background-color: #21a557;
+	border-radius: 2px;
+}
+.onebook{
+	margin: 4px 0;
+	padding: 4px 0;
 }
