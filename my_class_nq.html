@@ -103,11 +103,11 @@
 					<ul><hr/>
 						<li><a href="my_class_learning.html">我的课程</a></li><hr/>
 						<li class="active"><a href="my_class_nq.html">笔记问答</a></li><hr/>
-						<li><a href="javascript:void(0);">我的题库</a></li><hr/>
-						<li><a href="javascript:void(0);">我的讨论</a></li><hr/>
-						<li><a href="javascript:void(0);">播放记录</a></li><hr/>
-						<li><a href="javascript:void(0);">个人资料</a></li><hr/>
-						<li><a href="javascript:void(0);">我的老师</a></li><hr/>
+						<li><a href="my_class_exam.html">我的题库</a></li><hr/>
+						<li><a href="my_class_discuz.html">我的讨论</a></li><hr/>
+						<li><a href="my_class_history.html">播放记录</a></li><hr/>
+						<li><a href="my_class_profile.html">个人资料</a></li><hr/>
+						<li><a href="my_class_teacher.html">我的老师</a></li><hr/>
 					</ul>
 				</div>
 			</div><!-- 左侧结束 -->
@@ -129,7 +129,7 @@
 								<a href="###"><img src="img/book01.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看笔记</div>
+										<div class="show-nq" onclick="showNote();">查看笔记</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -147,7 +147,7 @@
 								<a href="###"><img src="img/book02.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看笔记</div>
+										<div class="show-nq" onclick="showNote();">查看笔记</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -165,7 +165,7 @@
 								<a href="###"><img src="img/book03.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看笔记</div>
+										<div class="show-nq" onclick="showNote();">查看笔记</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -183,7 +183,7 @@
 								<a href="###"><img src="img/book04.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看笔记</div>
+										<div class="show-nq" onclick="showNote();">查看笔记</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -201,7 +201,7 @@
 								<a href="###"><img src="img/book04.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看笔记</div>
+										<div class="show-nq" onclick="showNote();">查看笔记</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -219,7 +219,7 @@
 								<a href="###"><img src="img/book03.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看笔记</div>
+										<div class="show-nq" onclick="showNote();">查看笔记</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -237,7 +237,7 @@
 								<a href="###"><img src="img/book02.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看笔记</div>
+										<div class="show-nq" onclick="showNote();">查看笔记</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -255,7 +255,7 @@
 								<a href="###"><img src="img/book01.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看笔记</div>
+										<div class="show-nq" onclick="showNote();">查看笔记</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -273,7 +273,7 @@
 								<a href="###"><img src="img/book01.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看笔记</div>
+										<div class="show-nq" onclick="showNote();">查看笔记</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -291,7 +291,7 @@
 								<a href="###"><img src="img/book02.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看笔记</div>
+										<div class="show-nq" onclick="showNote();">查看笔记</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -312,7 +312,7 @@
 								<a href="###"><img src="img/book04.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看问答</div>
+										<div class="show-nq" onclick="showQues();">查看问答</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -330,7 +330,7 @@
 								<a href="###"><img src="img/book03.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看问答</div>
+										<div class="show-nq" onclick="showQues();">查看问答</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -348,7 +348,7 @@
 								<a href="###"><img src="img/book02.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看问答</div>
+										<div class="show-nq" onclick="showQues();">查看问答</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -366,7 +366,7 @@
 								<a href="###"><img src="img/book01.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看问答</div>
+										<div class="show-nq" onclick="showQues();">查看问答</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -384,7 +384,7 @@
 								<a href="###"><img src="img/book02.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看问答</div>
+										<div class="show-nq" onclick="showQues();">查看问答</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -402,7 +402,7 @@
 								<a href="###"><img src="img/book01.png" alt=""></a>
 								<div class="dask">
 									<a href="###">
-										<div class="show-nq">查看问答</div>
+										<div class="show-nq" onclick="showQues();">查看问答</div>
 									</a>
 									<div class="myclose" title="移除本课程"></div>
 								</div>
@@ -424,16 +424,169 @@
 						</div>
 					</div>
 					<div class="note-num">共55条笔记</div>
+					<!-- 一条笔记开始 -->
 					<div class="one-note">
 						<div class="lession">第一课</div>
 						<div class="note-right">
 							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+								<div class="tosw">04:54</div>
+							</div>
 						</div>
-					</div>
+					</div><hr class="notehr"><!-- 一条笔记结束 -->
+					<!-- 一条笔记开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+								<div class="tosw">04:54</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条笔记结束 -->
+					<!-- 一条笔记开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+								<div class="tosw">04:54</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条笔记结束 -->
+					<!-- 一条笔记开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+								<div class="tosw">04:54</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条笔记结束 -->
+					<!-- 一条笔记开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+								<div class="tosw">04:54</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条笔记结束 -->
+					<!-- 一条笔记开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+								<div class="tosw">04:54</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条笔记结束 -->
+					<!-- 一条笔记开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+								<div class="tosw">04:54</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条笔记结束 -->
+					<!-- 一条笔记开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+								<div class="tosw">04:54</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条笔记结束 -->
 				</div><!-- tabnote结束 -->
 				<!-- tabques开始 -->
 				<div id="target-t-ques" class="row f-in-o">
-
+					<div class="note-intro">
+						<img src="img/ico_note_intro.png" alt="">
+						<div class="nc-right">
+							<div class="nc-title">手绘画系列教程</div>
+							<div class="nc-pre">生活中不乏有很多美好的画面，何不用画笔记录下来呢？那么就跟几分钟网一起来记录美好画面吧！</div>
+						</div>
+					</div>
+					<div class="note-num">共55条问答</div>
+					<!-- 一条问答开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条问答结束 -->
+					<!-- 一条问答开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条问答结束 -->
+					<!-- 一条问答开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条问答结束 -->
+					<!-- 一条问答开始 -->
+					<div class="one-note">
+						<div class="lession">第一课</div>
+						<div class="note-right">
+							<div class="nr-content">建筑是美好的事物 让人找到爱的那种美 作品就是美和爱的表现,建筑是美好的事物 让人找到爱的那种美作品就是美和爱的表现</div>
+							<div class="nr-opra">
+								<span>2014-3-2</span>
+								<div class="modify">修改</div>
+								<div class="delete">删除</div>
+							</div>
+						</div>
+					</div><hr class="notehr"><!-- 一条问答结束 -->
 				</div><!-- tabques结束 -->
 			</div><!-- 右侧结束 -->
 	    </div><!-- /.container-->
@@ -511,25 +664,41 @@
 
     });
 });
-
- function showTab(obj){
  	var tab1 = document.getElementById("tabone");
  	var tab2 = document.getElementById("tabtwo");
  	var target1 = document.getElementById("target-t-1");
  	var target2 = document.getElementById("target-t-2");
+ 	var target3 = document.getElementById("target-t-note");
+ 	var target4 = document.getElementById("target-t-ques");
+
+ function showTab(obj){
+
  	tab1.className="";
  	tab2.className="";
  	obj.className="active";
  	var tabId = obj.id;
  	target1.style.display = "none";
  	target2.style.display = "none";
+ 	target3.style.display = "none";
+ 	target4.style.display = "none";
  	if(tabId==="tabone"){
  		target1.style.display = "block";
  	}else{
  		target2.style.display = "block";
  	}
  }
-
+function showNote(){
+	target1.style.display = "none";
+ 	target2.style.display = "none";
+ 	target3.style.display = "block";
+ 	target4.style.display = "none";
+}
+function showQues(){
+	target1.style.display = "none";
+ 	target2.style.display = "none";
+ 	target3.style.display = "none";
+ 	target4.style.display = "block";
+}
 </script>
 </body>
 </html>

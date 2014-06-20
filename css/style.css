@@ -1064,6 +1064,8 @@ li.active .arrow-up{
 .cm-class{
 	width: 220px;
 	overflow: hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
 	white-space: nowrap;
 }
 .huifu,.fuzhi,.ding{
@@ -1193,7 +1195,7 @@ hr.cm-bottomhr{
 	padding-left: 6px;
 	padding-right: 6px;
 }
-#target-t-1, #target-t-2,#target-t-3,
+#target-t-note, #target-t-2,#target-t-3,
 #target-t-ques{
 	display: none;
 }
@@ -1354,7 +1356,6 @@ hr.cm-bottomhr{
 	margin-bottom: 34px;
 }
 .one-note{
-	height: 104px;
 	padding-right: 10px;
 }
 .lession{
@@ -1375,4 +1376,237 @@ hr.cm-bottomhr{
 .nr-content{
 	margin-top: 22px;
 	color: #222;
+	padding-bottom: 42px;
+}
+.nr-opra{
+	position: absolute;
+	right: 18px;
+	bottom: 12px;
+	height: 30px;
+	zoom: 1;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.nr-opra:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.nr-opra span{
+	float: left;
+	display: block;
+	font-size: 11px;
+	color: #212121;
+	margin-right: 20px;
+}
+.tosw{
+	float: left;
+	height: 30px;
+	width: 98px;
+	margin-left: 20px;
+	color: #474747;
+	line-height: 28px;
+	text-align: center;
+	border: 1px solid #dedede;
+	cursor: pointer;
+}
+.tosw:hover{
+	color: #fff;
+	background-color: #21a557;
+}
+.nr-opra .modify,
+.nr-opra .delete{
+	margin-top: 6px;
+}
+.notehr{
+	border-top: 1px solid #e5e5e5;
+	margin-top: 4px;
+	margin-bottom: 16px;
+}
+
+/* 我的考试题库页面my_class_exam
+	主要用的还是笔记问答页面的元素 */
+.nq-title.exam a{
+	font-size: 18px;
+	color: #2b2b2b;
+}
+.tags{
+	margin: 46px 0;
+	zoom: 1;
+}
+.tags:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.onetag{
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 30px;
+	cursor: pointer;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.onetag:hover,.onetag.active{
+	background-color: #21a557;
+	color: #fff;
+}
+.exam.one-note{
+	height: 104px;
+}
+.exam .nr-content{
+	font-size: 18px;
+	color: #2c2c2c;
+	padding-left: 30px;
+	margin-top: 40px;
+}
+.exam .nr-opra{
+	top: 50%;
+	margin-top: -19px;
+}
+.exam .nr-opra .tosw{
+	line-height: 36px;
+	width: 112px;
+	height: 38px;
+}
+/* 学员考试试题my_class_paper
+	参照了更多评论页面元素 */
+.mcmtbread.paper{
+	height: 106px;
+	line-height: 106px;
+}
+.paper-title{
+	font-size: 24px;
+}
+.remark{
+	height: 166px;
+	margin-top: 96px;
+	border-top: 1px solid #e5e5e5;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.remark-ct{
+	margin-top: 2px;
+	background-color: #fffee9;
+	height: 160px;
+	padding: 20px 40px;
+}
+.leftform{
+	float: left;
+	width: 678px;
+	margin-bottom: 30px;
+}
+.rightctrl{
+	float: right;
+	width: 268px;
+}
+.mytable{
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	border-bottom: none;
+}
+.mytable tbody{
+	border-bottom: 1px solid #d0d0d0;
+}
+.mytable tbody:hover{
+	background-color: #e9fff0;
+}
+.qid{
+	width: 50px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	color: #21a557;
+}
+.qblank{
+	width: 10px;
+}
+.row-1st .qcnt{
+	color: #21a557;
+	padding: 16px 10px;
+}
+.row-2nd .qcnt{
+	padding: 10px 0;
+	border-top: 1px dashed #d0d0d0;
+	border-bottom: 1px dashed #d0d0d0;
+}
+.opt{
+	padding: 10px 5px;
+	cursor: pointer;
+}
+.opt:hover{
+	background-color: #ddfde8;
+
+}
+.opt.active{
+	background-color: #d4fce2;
+}
+.opt em{
+	color: #999;
+	font-style: normal;
+	margin-right: 20px;
+}
+.qcnt .radio{
+	float: left;
+	margin-right: 30px;
+}
+.qcnt .radio + .radio{
+	margin-top: 10px;
+}
+.sel-opr{
+	float: right;
+	margin-top: 10px;
+}
+.sel-opr div{
+	float: left;
+	padding-left: 16px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.ctroltop, .ctrolitems{
+	position: relative;
+	width: 100%;
+	zoom: 1;
+}
+.ctroltop{
+	height: 45px;
+	background-color: #fafafa;
+	border-bottom: 1px solid #eee;
+}
+.ctroltop:after, .ctrolitems:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.time-left,.ppuse,.pcancle{
+	height: 34px;
+	line-height: 34px;
+	top: 5px;
+	cursor: pointer;
+}
+.time-left{
+	position: absolute;
+	left: 20px;
+	font-size: 20px;
+	color: #21a557;
+	cursor: default;
+}
+.ppuse,.pcancle{
+	position: absolute;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #e3e3e3;
+}
+.ppuse:hover,.pcancle:hover{
+	background-color: #f3f3f3;
+}
+.ppuse{
+	left: 100px;
+}
+.pcancle{
+	left: 170px;
 }
