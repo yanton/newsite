@@ -12,53 +12,6 @@
 </head>
 <body>
 	<div class="wrap">
-		<header>
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="container">
-					<!-- logo和搜索栏 -->
-					<div class="brand">
-						<a href="index.html"><img src="img/logo.png" alt="曼诺林"></a>
-						<div class="title hidden-xs">远程教辅平台</div>
-						<form class="navbar-form hidden-xs" role="search">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="搜索课程、视频、资料" x-webkit-speech lang="zh-CN">
-							</div><button type="submit" class="btn btn-default btn-search">搜索</button>
-						</form>
-						<div class="admin">
-							<div class="name"><a href="###">CaptainJack</a></div>
-							<div class="manage"><a href="###">注销</a></div>
-						</div>
-					</div><!-- /.brand -->
-				</div><!-- /.container -->
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="header">
-					<div class="container">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li><a href="#">课程中心</a></li>
-								<li class="active"><a href="#">个人中心</a></li>
-								<li><a href="#">实时课堂</a></li>
-								<li><a href="#">扩展阅读</a></li>
-							</ul>
-							<form class="navbar-form header-search" role="search" style="display:none;">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="搜索课程、视频、资料" x-webkit-speech lang="zh-CN">
-								</div><button type="submit" class="btn btn-default btn-search">搜索</button>
-							</form>
-						</div><!-- /.navbar-collapse -->
-					</div><!-- /.container ./header -->
-				</div><!-- /.header -->
-			</nav>
-		</header>
 		<div class="mcmtbread paper">
 			<div class="container">
 				<div class="paper-title">2012年一级建造师考试建设工程法规相关知识真题</div>
@@ -345,13 +298,36 @@
 				</div><!-- 左侧结束了，嘿嘿 -->
 				<!-- 右侧的题目控制项 -->
 				<div class="rightctrl">
-					<div class="ctroltop">
-						<div class="time-left">141:01</div>
-						<div class="ppuse">暂停</div>
-						<div class="pcancle">下次再做</div>
+					<div class="befixed">
+						<div class="ctroltop">
+							<div class="time-left">141:01</div>
+							<div class="ppuse">暂停</div>
+							<div class="pcancle">下次再做</div>
+						</div>
+						<div class="ctrolitems">
+							<span class="p-item" id="auto-id-1">1</span>
+							<span class="p-item" id="auto-id-2">2</span>
+							<span class="p-item" id="auto-id-3">3</span>
+							<span class="p-item" id="auto-id-4">4</span>
+							<span class="p-item" id="auto-id-5">5</span>
+							<span class="p-item" id="auto-id-6">6</span>
+							<span class="p-item" id="auto-id-7">7</span>
+							<span class="p-item" id="auto-id-8">8</span>
+							<span class="p-item" id="auto-id-9">9</span>
+							<span class="p-item" id="auto-id-10">10</span>
+							<span class="p-item" id="auto-id-11">11</span>
+							<span class="p-item" id="auto-id-12">12</span>
+							<span class="p-item" id="auto-id-13">13</span>
+							<span class="p-item" id="auto-id-14">14</span>
+							<span class="p-item" id="auto-id-15">15</span>
+							<span class="p-item" id="auto-id-16">16</span>
+							<span class="p-item" id="auto-id-17">17</span>
+							<span class="p-item" id="auto-id-18">18</span>
+							<span class="p-item" id="auto-id-19">19</span>
+							<span class="p-item" id="auto-id-20">20</span>
+						</div>
+						<div class="ctrolcmt">提交试卷</div>
 					</div>
-					<div class="ctrolitems"></div>
-					<div class="ctrolcmt">提交试卷</div>
 				</div><!-- 右侧结束了，拉拉 -->
 
       </div><!-- /.row -->
@@ -409,11 +385,13 @@
 	      		bt.show();
 	      		hs.show();
 	      		header.css("box-shadow","0 1px 15px rgba(153,153,153,0.50)");
+	      		$('.befixed').addClass("fixed");
 	      	}else{
 	      		$('.header').removeClass("fixhead");
 	      		bt.hide();
 	      		hs.hide();
 	      		header.css("box-shadow","none");
+	      		$('.befixed').removeClass("fixed");
 	      	}
 	      });
       	$('.back-top').click(function(){

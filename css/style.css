@@ -81,6 +81,11 @@ textarea{
 	resize:none;
 }
 
+.fixed{
+	position: fixed !important;
+}
+
+
 html,body {
   height: 100%;
 }
@@ -870,8 +875,8 @@ li.active .arrow-up{
 }
 .mcmtbread{
 	width: 100%;
-	height: 160px;
-	line-height: 160px;
+	height: 106px;
+	line-height: 106px;
 	background-color: #fece7a;
 }
 .mcmtbread .breadnav li,
@@ -1314,6 +1319,9 @@ hr.cm-bottomhr{
 .showinfo.active .nq-title a{
 	color: #666;
 }
+.note-intro{
+	margin-bottom: 30px;
+}
 .note-intro,.one-note{
 	position: relative;
 	background-color: #f3f3f3;
@@ -1500,6 +1508,7 @@ hr.cm-bottomhr{
 	margin-bottom: 30px;
 }
 .rightctrl{
+	position: relative;
 	float: right;
 	width: 268px;
 }
@@ -1609,4 +1618,80 @@ hr.cm-bottomhr{
 }
 .pcancle{
 	left: 170px;
+}
+.befixed{
+	border: 1px solid #eee;
+}
+.befixed.fixed{
+	width: 268px;
+	top: 100px;
+}
+
+.ctrolcmt{
+	cursor: pointer;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	background-color: #21a557;
+}
+.ctrolcmt:hover{
+	background-color: #21c062;
+}
+.ctrolitems{
+	width: 100%;
+	padding: 10px 7px;
+	zoom: 1;
+}
+.ctrolitems:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.p-item{
+	cursor: pointer;
+	float: left;
+	display: block;
+	height: 22px;
+	width: 22px;
+	margin: 0 3px 5px 0;
+	line-height: 22px;
+	text-align: center;
+	color: #666;
+	background-color: #eaeaea;
+}
+.p-item:hover{
+	background-color: #21a557;
+	color:#fff;
+}
+
+
+/* 我的讨论 */
+.discuz .nc-right{
+	margin-top: 12px;
+	padding-right: 160px;
+}
+.discuz .nc-title{
+	font-size: 18px;
+	color: #2b2b2b;
+}
+.findcmt{
+	position: absolute;
+	top: 50%;
+	right: 24px;
+	margin-top: -20px;
+	width: 112px;
+	height: 40px;
+	line-height: 38px;
+	color: #474747;
+	text-align: center;
+	cursor: pointer;
+	background-color: #f3f3f3;
+	border: 1px solid #e1e1e1;
+}
+.findcmt:hover{
+	color: #fff;
+	background-color: #21a557;
 }
