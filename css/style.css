@@ -1172,8 +1172,10 @@ hr.cm-bottomhr{
 	clear: both;
 }
 .tabs div{
+	width: 90px;
 	float: left;
 	margin-right: 58px;
+	text-align: center;
 	color: #666;
 	border-bottom: 3px solid #858585;
 }
@@ -1320,7 +1322,7 @@ hr.cm-bottomhr{
 	color: #666;
 }
 .note-intro{
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 }
 .note-intro,.one-note{
 	position: relative;
@@ -1389,7 +1391,7 @@ hr.cm-bottomhr{
 .nr-opra{
 	position: absolute;
 	right: 18px;
-	bottom: 12px;
+	bottom: 10px;
 	height: 30px;
 	zoom: 1;
 	line-height: 30px;
@@ -1694,4 +1696,69 @@ hr.cm-bottomhr{
 .findcmt:hover{
 	color: #fff;
 	background-color: #21a557;
+}
+.one-note.discuz{
+	height: 60px;
+}
+.discuz .tosw{
+	height: 30px;
+	width: 84px;
+}
+.discuz .nr-opra span{
+	height: 30px;
+	line-height: 30px;
+	color: #888787;
+	font-size: 12px;
+	margin-right: 0;
+}
+.discuz .nr-content{
+	margin-top: 20px;
+	padding: 0 200px 0 0;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space: nowrap;
+}
+/*个人资料*/
+.one-stu{
+	position: relative;
+	background-color: #f3f3f3;
+	margin-bottom: 24px;
+	zoom:1;
+}
+.one-stu:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.pf-pic{
+	display: block;
+	float: left;
+	height: 316px;
+	width: 250px;
+}
+.pf-basic{
+	padding-left: 50px;
+	float: left;
+}
+.pf-basic span{
+	display: block;
+	float: left;
+	font-size: 18px;
+	color: #4a4a4a;
+}
+.lines{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	zoom:1;
+}
+.lines:after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.one-stu .nr-opra{
+	top: 50%;
+	margin-top: -15px;
 }

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>远程教育平台</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if it IE 9]-->
+	<script type="text/javascript" src="js/html5.js"></script>
+	<!--[endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- logo和搜索栏 -->
+					<div class="brand">
+						<a href="index.html"><img src="img/logo.png" alt="曼诺林"></a>
+						<div class="title hidden-xs">远程教辅平台</div>
+						<form class="navbar-form hidden-xs" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="搜索课程、视频、资料" x-webkit-speech lang="zh-CN">
+							</div><button type="submit" class="btn btn-default btn-search">搜索</button>
+						</form>
+						<div class="admin">
+							<div class="name"><a href="###">CaptainJack</a></div>
+							<div class="manage"><a href="###">注销</a></div>
+						</div>
+					</div><!-- /.brand -->
+				</div><!-- /.container -->
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="header">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li><a href="#">课程中心</a></li>
+								<li class="active"><a href="#">个人中心</a></li>
+								<li><a href="#">实时课堂</a></li>
+								<li><a href="#">扩展阅读</a></li>
+							</ul>
+							<form class="navbar-form header-search" role="search" style="display:none;">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="搜索课程、视频、资料" x-webkit-speech lang="zh-CN">
+								</div><button type="submit" class="btn btn-default btn-search">搜索</button>
+							</form>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container ./header -->
+				</div><!-- /.header -->
+			</nav>
+		</header>
+		<!-- 轮播 -->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/carousel02.png" alt="测试第一张">
+					<div class="carousel-caption">
+						测试第一张
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/carousel01.png" alt="测试第二张">
+					<div class="carousel-caption">
+						测试第二张
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/carousel03.png" alt="测试第三张">
+					<div class="carousel-caption">
+						测试第三张
+					</div>
+				</div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div><!-- 轮播结束 -->
+		<div class="container">
+			<!-- 左侧侧边栏 -->
+			<div class="col-md-2 col-xs-4 sidebar learning">
+				<div class="nav navbar">
+					<ul><hr/>
+						<li><a href="my_class_learning.html">我的课程</a></li><hr/>
+						<li><a href="my_class_nq.html">笔记问答</a></li><hr/>
+						<li><a href="my_class_exam.html">我的题库</a></li><hr/>
+						<li><a href="my_class_discuz.html">我的讨论</a></li><hr/>
+						<li><a href="my_class_history.html">播放记录</a></li><hr/>
+						<li><a href="my_class_profile.html">个人资料</a></li><hr/>
+						<li class="active"><a href="my_class_teacher.html">我的老师</a></li><hr/>
+					</ul>
+				</div>
+			</div><!-- 左侧结束 -->
+			<!-- 右侧内容 -->
+			<div class="col-md-10 col-xs-8 mylearn">
+				<h2 style="margin-bottom:59px;">我的老师</h2>
+				<!-- 展示课程 -->
+				<!-- tab1开始 -->
+				<div id="target-t-1" class="row f-in-o">
+					<div class="one-stu">
+						<img src="img/tech_avatar.png" class="pf-pic" title="点击修改头像">
+						<div class="pf-basic">
+							<div class="lines"><span>昵&nbsp;&nbsp;称：</span><span>张老师</span></div>
+							<div class="lines"><span>用户名：</span><span>admin</span></div>
+							<div class="lines"><span>所属学校：</span><span>清华大学</span></div>
+							<div class="lines"><span>注册时间：</span><span>2014-01-06 15:46:19</span></div>
+							<div class="lines"><span>最后登录：</span><span>2014-03-22 14:02:39</span></div>
+							<div class="lines"><span>注册IP：</span><span>192.168.1.1</span></div>
+							<div class="lines"><span>上次登录IP：</span><span>192.168.1.1</span></div>
+							<div class="nr-opra"><div class="tosw">联系老师</div></div>
+						</div>
+					</div>
+					<div class="one-stu">
+						<img src="img/tech_avatar.png" class="pf-pic" title="点击修改头像">
+						<div class="pf-basic">
+							<div class="lines"><span>昵&nbsp;&nbsp;称：</span><span>张老师</span></div>
+							<div class="lines"><span>用户名：</span><span>admin</span></div>
+							<div class="lines"><span>所属学校：</span><span>清华大学</span></div>
+							<div class="lines"><span>注册时间：</span><span>2014-01-06 15:46:19</span></div>
+							<div class="lines"><span>最后登录：</span><span>2014-03-22 14:02:39</span></div>
+							<div class="lines"><span>注册IP：</span><span>192.168.1.1</span></div>
+							<div class="lines"><span>上次登录IP：</span><span>192.168.1.1</span></div>
+							<div class="nr-opra"><div class="tosw">联系老师</div></div>
+						</div>
+					</div>
+					<div class="one-stu">
+						<img src="img/tech_avatar.png" class="pf-pic" title="点击修改头像">
+						<div class="pf-basic">
+							<div class="lines"><span>昵&nbsp;&nbsp;称：</span><span>张老师</span></div>
+							<div class="lines"><span>用户名：</span><span>admin</span></div>
+							<div class="lines"><span>所属学校：</span><span>清华大学</span></div>
+							<div class="lines"><span>注册时间：</span><span>2014-01-06 15:46:19</span></div>
+							<div class="lines"><span>最后登录：</span><span>2014-03-22 14:02:39</span></div>
+							<div class="lines"><span>注册IP：</span><span>192.168.1.1</span></div>
+							<div class="lines"><span>上次登录IP：</span><span>192.168.1.1</span></div>
+							<div class="nr-opra"><div class="tosw">联系老师</div></div>
+						</div>
+					</div>
+					<div class="one-stu">
+						<img src="img/tech_avatar.png" class="pf-pic" title="点击修改头像">
+						<div class="pf-basic">
+							<div class="lines"><span>昵&nbsp;&nbsp;称：</span><span>张老师</span></div>
+							<div class="lines"><span>用户名：</span><span>admin</span></div>
+							<div class="lines"><span>所属学校：</span><span>清华大学</span></div>
+							<div class="lines"><span>注册时间：</span><span>2014-01-06 15:46:19</span></div>
+							<div class="lines"><span>最后登录：</span><span>2014-03-22 14:02:39</span></div>
+							<div class="lines"><span>注册IP：</span><span>192.168.1.1</span></div>
+							<div class="lines"><span>上次登录IP：</span><span>192.168.1.1</span></div>
+							<div class="nr-opra"><div class="tosw">联系老师</div></div>
+						</div>
+					</div>
+				</div><!-- tab1结束 -->
+			</div><!-- 右侧结束 -->
+	    </div><!-- /.container-->
+		<div class="footerpush"></div>
+	</div>
+	<div style="display:none;" class="back-to" id="toolBackTop">
+		<a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top">返回顶部</a>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="content">&copy;Copyright&nbsp;&nbsp;北京市曼诺林数字科技有限公司</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+      //initiating jQuery
+      jQuery(function($) {
+      	$(document).ready( function() {
+         //返回顶部和menue搜索栏的显示
+         var bt = $('#toolBackTop');
+	     	 var hs = $('.header-search');
+	     	 var header = $('.header');
+
+
+	     	 var sw = $(document.body)[0].clientWidth;
+	     	 var contentLength = $('.container')[0].clientWidth;
+	     	 var limitsw = (sw - contentLength) / 2 - 90;
+
+	     	 if (limitsw > 0){
+	     	 	limitsw = parseInt(limitsw);
+	     	 	bt.css("right",limitsw);
+	     	 }else{
+	     	 	bt.css("right",20)
+	     	 }
+
+	     	 $(window).resize(function(){
+	     	 	var sw = $(document.body)[0].clientWidth;
+	     	 	var sh=window.innerHeight
+	     	 	var contentLength = $('.container')[0].clientWidth;
+	     	 	var limitsw = (sw - contentLength) / 2 - 90;
+	     	 	if (limitsw > 0){
+	     	 		limitsw = parseInt(limitsw);
+	     	 		bt.css("right",limitsw);
+	     	 	}else{
+	     	 		bt.css("right",20)
+	     	 	}
+	     	 });
+	      	$(window).scroll(function() {
+	      	var st = $(window).scrollTop();
+	      	if(st > 300){
+	      		$('.header').addClass("fixhead");
+	      		bt.show();
+	      		hs.show();
+	      		header.css("box-shadow","0 1px 15px rgba(153,153,153,0.50)");
+	      	}else{
+	      		$('.header').removeClass("fixhead");
+	      		bt.hide();
+	      		hs.hide();
+	      		header.css("box-shadow","none");
+	      	}
+	      });
+      	$('.back-top').click(function(){
+      		$('html,body').animate({scrollTop:0},0);
+      	});
+
+
+    });
+});
+</script>
+</body>
+</html>
