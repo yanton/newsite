@@ -1203,7 +1203,7 @@ hr.cm-bottomhr{
 	padding-right: 6px;
 }
 #target-t-note, #target-t-2,#target-t-3,
-#target-t-ques{
+#target-t-ques,#target-t-4{
 	display: none;
 }
 
@@ -1761,4 +1761,21 @@ hr.cm-bottomhr{
 .one-stu .nr-opra{
 	top: 50%;
 	margin-top: -15px;
+}
+
+/* 教师查看我的学员 */
+.s-t-c{
+	position: absolute;
+	top: 50%;
+	right: 18px;
+	margin-top: -66px;
+}
+.s-t-c .tosw{
+	float: none;
+}
+.rep-num{
+	font-size: 18px;
+	color: #ff7e00;
+	margin:42px 0 10px 20px;
+	text-align: center;
 }
