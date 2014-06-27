@@ -1831,6 +1831,9 @@ hr.cm-bottomhr{
 .briefl p{
 	font-size: 12px;
 }
+.briefr{
+	padding-left: 28px;
+}
 .briefr table{
 	width: 100%;
 }
@@ -1841,9 +1844,79 @@ hr.cm-bottomhr{
 	width: 64px;
 	font-weight: normal;
 }
-.brf-line input{
+.brf-line input,
+.brf-line input:hover,
+.brf-line input:focus{
 	width: 100%;
 	height: 38px;
 	margin: 15px 0;
 	border: 1px solid #dbdbdb;
+}
+textarea#input3{
+	width: 100%;
+	border: 1px solid #dbdbdb;
+	margin: 15px 0;
+}
+.micro-courses{
+	background-color: #f3f3f3;
+	padding: 56px 0 10px;
+	margin-top: 66px;
+	margin-bottom: 20px;
+}
+.micro-one{
+	padding:10px 12px 18px 32px;
+	border-top: 1px dashed #dbdbdb;
+	border-bottom: 1px dashed #dbdbdb;
+	margin-bottom: 15px;
+}
+.micro-one.on-focus{
+	background-color: #fffee9;
+}
+.micro-one:hover{
+	background-color: #e9fff0;
+}
+.micro-one td{
+	padding: 10px 0;
+}
+td.m-left{
+	width: 60px;
+	color: #585858;
+	position: relative;
+}
+td.m-right div{
+	color: #131313;
+	text-align: center;
+}
+.m-del,.m-up,.m-down{
+	cursor: pointer;
+	float:left;
+	width: 118px;
+	height: 28px;
+	line-height: 26px;
+	border: 1px solid #e1e1e1;
+	background-color: #f3f3f3;
+}
+.m-del:hover{
+	background-color: #ff7f74;
+}
+.m-up,.m-down{
+	float: right;
+}
+.m-up:hover,.m-down:hover{
+	background-color: #d4fce2;
+}
+.m-right input{
+	width: 100%;
+	height: 36px;
+	border: 1px solid #e1e1e1;
+}
+.getfile{
+	position: absolute;
+	height: 36px;
+	width: 118px;
+	border: 1px solid #e1e1e1;
+	line-height: 34px;
+	text-align: center;
+	top: 0;
+	right: 0;
 }
