@@ -1887,7 +1887,7 @@ td.m-right div{
 	color: #131313;
 	text-align: center;
 }
-.m-del,.m-up,.m-down{
+.m-del,.m-up,.m-down,.m-add{
 	cursor: pointer;
 	float:left;
 	width: 118px;
@@ -1896,13 +1896,21 @@ td.m-right div{
 	border: 1px solid #e1e1e1;
 	background-color: #f3f3f3;
 }
+.m-add{
+	float: none;
+	margin-left: 92px;
+	text-align: center;
+	margin-bottom: 10px;
+}
 .m-del:hover{
 	background-color: #ff7f74;
 }
 .m-up,.m-down{
 	float: right;
+	margin-left: 10px;
 }
-.m-up:hover,.m-down:hover{
+.m-up:hover,.m-down:hover,
+.m-add:hover{
 	background-color: #d4fce2;
 }
 .m-right input{
@@ -1919,4 +1927,44 @@ td.m-right div{
 	text-align: center;
 	top: 0;
 	right: 0;
+}
+
+/* 题库管理 */
+.to-next{
+	float: right;
+	cursor: pointer;
+	width: 90px;
+	height: 32px;
+	line-height: 30px;
+	border: 1px solid #e1e1e1;
+	text-align: center;
+}
+.to-next:hover{
+	background-color: #21a557;
+	color: #fff;
+}
+.papers{
+	padding: 15px 0;
+	background-color: #f3f3f3;
+}
+.papers h4{
+	margin-left: 80px;
+	color: #fd675f;
+}
+.one-paper{
+	padding: 10px 20px 10px 92px;
+}
+.one-paper:hover{
+	background-color: #fffee9;
+}
+.one-paper span{
+	display: block;
+	margin: 10px 0 10px 10px;
+	color: #585858;
+}
+.one-paper input{
+	display: inline-block;
+	margin: 10px 0;
+	height: 36px;
+	width: 100%;
 }

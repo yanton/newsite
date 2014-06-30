@@ -108,8 +108,8 @@
 						<li><a href="my_class_history.html">播放记录</a></li><hr/>
 						<li><a href="my_class_profile.html">个人资料</a></li><hr/>
 						<li><a href="admin_my_stu.html">我的学员</a></li><hr/>
-						<li class="active"><a href="admin_course.html">课程管理</a></li><hr/>
-						<li><a href="admin_exam.html">题库管理</a></li><hr/>
+						<li><a href="admin_course.html">课程管理</a></li><hr/>
+						<li class="active"><a href="admin_exam.html">题库管理</a></li><hr/>
 					</ul>
 				</div>
 			</div><!-- 左侧结束 -->
@@ -118,8 +118,8 @@
 				<h2>课程管理</h2>
 				<!-- 顶部标签 -->
 				<div class="tabs">
-					<div id="tabone" class="active" onclick="showTab(this);"><a href="javascript:void(0);">所有课程(6)</a></div>
-					<div id="tabtwo" onclick="showTab(this);"><a href="javascript:void(0);">新建课程</a></div>
+					<div id="tabone" class="active" onclick="showTab(this);"><a href="javascript:void(0);">所有题库(6)</a></div>
+					<div id="tabtwo" onclick="showTab(this);"><a href="javascript:void(0);">新建题库</a></div>
 					<div id="tabthree" onclick="showTab(this);"><a href="javascript:void(0);">正在编辑</a></div>
 				</div>
 				<!-- 展示课程 -->
@@ -200,7 +200,7 @@
 				</div><!-- tab1结束 -->
 				<!-- tab2开始 -->
 				<div id="target-t-2" class="row f-in-o new-course">
-					<h3 id="cs-head">新建课程</h3>
+					<h3 id="cs-head">新建题库</h3>
 					<div class="pro-out">
 						<div class="progress">
 						  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
@@ -227,202 +227,42 @@
 									</tr>
 									<tr class="brf-line">
 										<td class="mlabel"><label for="input3">简介：</label></td>
-										<td><textarea id="input3" rows="4"></textarea></td>
+										<td><textarea id="input3" rows="6"></textarea></td>
 									</tr>
 									<tr class="brf-line">
-										<td class="mlabel"><label for="input4">关键字：</label></td>
-										<td><input type="text" id="input4"></td>
+										<td class="mlabel"></td>
+										<td><div class="to-next">下一步</div></td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 					</div>
-					<div class="micro-courses">
-						<div class="micro-one">
-							<table style="width:100%;">
-								<tbody>
-									<tr>
-										<td class="m-left"></td>
-										<td class="m-right">
-											<div class="m-del" onclick="del(this)">删除本项</div>
-											<div class="m-down" onclick="moveDown(this);">向下排序</div>
-											<div class="m-up" onclick="moveUp(this)">向上排序</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div>
-												<input type="text">
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div style="position:relative;">
-												<input type="text"><div class="getfile">载入文件</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="micro-one">
-							<table style="width:100%;">
-								<tbody>
-									<tr>
-										<td class="m-left"></td>
-										<td class="m-right">
-											<div class="m-del" onclick="del(this)">删除本项</div>
-											<div class="m-down" onclick="moveDown(this);">向下排序</div>
-											<div class="m-up" onclick="moveUp(this)">向上排序</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div>
-												<input type="text">
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div style="position:relative;">
-												<input type="text"><div class="getfile">载入文件</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="micro-one">
-							<table style="width:100%;">
-								<tbody>
-									<tr>
-										<td class="m-left"></td>
-										<td class="m-right">
-											<div class="m-del" onclick="del(this)">删除本项</div>
-											<div class="m-down" onclick="moveDown(this);">向下排序</div>
-											<div class="m-up" onclick="moveUp(this)">向上排序</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div>
-												<input type="text">
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div style="position:relative;">
-												<input type="text"><div class="getfile">载入文件</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="micro-one">
-							<table style="width:100%;">
-								<tbody>
-									<tr>
-										<td class="m-left"></td>
-										<td class="m-right">
-											<div class="m-del" onclick="del(this)">删除本项</div>
-											<div class="m-down" onclick="moveDown(this);">向下排序</div>
-											<div class="m-up" onclick="moveUp(this)">向上排序</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div>
-												<input type="text">
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div style="position:relative;">
-												<input type="text"><div class="getfile">载入文件</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="micro-one">
-							<table style="width:100%;">
-								<tbody>
-									<tr>
-										<td class="m-left"></td>
-										<td class="m-right">
-											<div class="m-del" onclick="del(this)">删除本项</div>
-											<div class="m-down" onclick="moveDown(this);">向下排序</div>
-											<div class="m-up" onclick="moveUp(this)">向上排序</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div>
-												<input type="text">
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div style="position:relative;">
-												<input type="text"><div class="getfile">载入文件</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="micro-one">
-							<table style="width:100%;">
-								<tbody>
-									<tr>
-										<td class="m-left"></td>
-										<td class="m-right">
-											<div class="m-del" onclick="del(this)">删除本项</div>
-											<div class="m-down" onclick="moveDown(this);">向下排序</div>
-											<div class="m-up" onclick="moveUp(this)">向上排序</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div>
-												<input type="text">
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td class="m-left">课时1：</td>
-										<td class="m-right">
-											<div style="position:relative;">
-												<input type="text"><div class="getfile">载入文件</div>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="m-add">添加课时</div>
+					<div class="tags">
+						<div class="onetag active">经济工程建设</div>
+						<div class="onetag">建筑工程项目管理</div>
+						<div class="onetag">经济工程建设</div>
+						<div class="onetag">建筑工程项目管理</div>
 					</div>
-					<div class="dosth">
-						<div class="domore"><a href="###" class="btn" >取消</a></div>
-						<div class="docm"><a href="###" class="btn">保存</a></div>
+					<div class="papers">
+						<h4>经济工程建设>试卷名称</h4>
+						<div class="one-paper">
+							<span>上次修改日期:2013-02-15</span>
+							<input type="text">
+							<div class="to-next">下一步</div>
+							<div style="clear:both;"></div>
+						</div>
+						<div class="one-paper">
+							<span>上次修改日期:2013-02-15</span>
+							<input type="text">
+							<div class="to-next">下一步</div>
+							<div style="clear:both;"></div>
+						</div>
+						<div class="one-paper">
+							<span>上次修改日期:2013-02-15</span>
+							<input type="text">
+							<div class="to-next">下一步</div>
+							<div style="clear:both;"></div>
+						</div>
 					</div>
 				</div><!-- tab2结束 -->
 				<!-- tab3开始 -->
@@ -555,31 +395,8 @@
       			$(this).find(".dask").removeClass("active");
       			$(this).parent().find(".showinfo").removeClass("active");
       	});
-      	$(".m-add").click(function(){
-      		$(this).before("<div class='micro-one'><table style='width:100%;'><tbody><tr><td class='m-left'></td><td class='m-right'><div class='m-del' onclick='del(this)'>删除本项</div><div class='m-down' onclick='moveDown(this)'>向下排序</div><div class='m-up' onclick='moveUp(this)''>向上排序</div></td></tr><tr><td class='m-left'>课时1：</td><td class='m-right'><div><input type='text'></div></td></tr><tr><td class='m-left'>课时1：</td><td class='m-right'><div style='position:relative;'><input type='text'><div class='getfile'>载入文件</div></div></td></tr></tbody></table></div>");
-      	});
-
-
     });
 });
-function moveDown(obj){
-	var move = $(obj).parent().parent().parent().parent().parent();
-	if(move.next().html()&&move.next().text()!="添加课时"){
-		move.insertAfter(move.next());
-	}
-}
-
-function moveUp(obj){
-	var move = $(obj).parent().parent().parent().parent().parent();
-	if(move.prev().html()){
-		move.insertBefore(move.prev());
-	}
-}
-
-function del(obj){
-	$(obj).parent().parent().parent().parent().parent().remove();
-}
-
 
 	var tab1 = document.getElementById("tabone");
  	var tab2 = document.getElementById("tabtwo");
@@ -591,7 +408,6 @@ function del(obj){
  	//var target4 = document.getElementById("target-t-4");
 	var chead = document.getElementById("cs-head");
 function showEdit(num){
-	
 	target1.style.display = "none";
  	target3.style.display = "none";
  	target2.style.display = "block";
@@ -608,14 +424,7 @@ function showEdit(num){
 }
 
  function showTab(obj){
- 	var tab1 = document.getElementById("tabone");
- 	var tab2 = document.getElementById("tabtwo");
- 	var tab3 = document.getElementById("tabthree");
- 	//var tab4 = document.getElementById("tabfour");
- 	var target1 = document.getElementById("target-t-1");
- 	var target2 = document.getElementById("target-t-2");
- 	var target3 = document.getElementById("target-t-3");
- 	//var target4 = document.getElementById("target-t-4");
+
  	tab1.className="";
  	tab2.className="";
  	tab3.className="";
